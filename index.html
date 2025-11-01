@@ -1,1 +1,34 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Homepage</title>\n    <style>\n        body {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n        }\n        img {\n            max-width: 100%;\n            height: auto;\n        }\n    </style>\n</head>\n<body>\n    <img src="assets/logos/phantered-tiger-logo.svg" alt="Phantered Tiger Logo">\n</body>\n</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retail Music Store</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; padding: 0; background: #0f172a; color: #e6eef8; display: flex; align-items: center; justify-content: center; height: 100vh; }
+      .card { max-width: 800px; padding: 2rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+      h1 { margin: 0 0 0.5rem 0; font-size: 2rem; }
+      p { margin: 0 0 1rem 0; color: #cfe6ff; }
+      .playlists { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+      .item { padding: 0.75rem; border-radius: 8px; background: rgba(255,255,255,0.02); }
+      footer { margin-top: 1.25rem; font-size: 0.85rem; color: #9fb7d8; }
+      a.button { display: inline-block; margin-top: 0.75rem; padding: 0.5rem 0.85rem; background: #06b6d4; color: #012; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Retail Music Store</h1>
+      <p>Soundtracks for your lifestyle — study, work, relax, and move. A demo static site ready for GitHub Pages.</p>
+      <a class="button" href="#explore">Explore Playlists</a>
+
+      <div id="explore" class="playlists">
+        <div class="item"><strong>Study Focus</strong><br/>Lo-fi, chill beats to help you concentrate.</div>
+        <div class="item"><strong>Workout</strong><br/>High-energy tracks to keep you moving.</div>
+        <div class="item"><strong>Relax</strong><br/>Ambient and acoustic for winding down.</div>
+        <div class="item"><strong>Evening</strong><br/>Soundtracks perfect for a cozy night in.</div>
+      </div>
+
+      <footer>Repo: phan-tom-png/Retail-music-store — Add your own playlists and tracks!</footer>
+    </div>
+  </body>
+</html>
